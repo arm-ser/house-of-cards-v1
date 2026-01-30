@@ -41,7 +41,7 @@ The homelab network consists of 4 separate networks connected through a PfSense 
 - 172.16.1.5 - [Joker Black](../devices/joker_black.md) (Dell 16 Plus DB16250) - Admin Workstation (Dual Boot Ubuntu/Windows)
 - 172.16.1.10 - [Ten of Spades](../devices/ten_of_spades.md) (Gaming PC via WiFi)
 - 172.16.1.15 - guest-accesspoint (Netgear WiFi 6 AX1800)
-- 172.16.1.100 - astx-laptop (ASTX Laptop) - Workstation
+- 172.16.1.100 - general-laptop (General Usage Laptop) - Workstation
 - 172.16.1.105 - tl-sg108e (TP-Link TL-SG108E) - Managed Switch
 - 172.16.1.120 - Pixel (Phone)
 - 172.16.1.220 - shield (Smart TV)

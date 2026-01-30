@@ -4,12 +4,12 @@ Single-page reference for understanding the entire homelab infrastructure.
 
 ## Network Quick Facts
 
-| Network | Subnet | Gateway | DNS | Purpose |
-|---------|--------|---------|-----|---------|
-| LAN | 192.168.1.0/24 | 192.168.1.1 | 192.168.1.50 | Servers & infrastructure |
-| GUST | 172.16.1.0/24 | 172.16.1.1 | 192.168.1.50 | WiFi & workstations |
-| DMZ | 10.0.1.0/24 | 10.0.1.10 | 192.168.1.50 | Isolated services (Cloudflare) |
-| WireGuard | 10.10.5.1/24 | 10.10.5.1 | 192.168.1.50 | VPN remote access |
+| Network   | Subnet         | Gateway     | Purpose                        |
+| --------- | -------------- | ----------- | ------------------------------ |
+| LAN       | 192.168.1.0/24 | 192.168.1.1 | Servers & infrastructure       |
+| GUST      | 172.16.1.0/24  | 172.16.1.1  | WiFi & workstations            |
+| DMZ       | 10.0.1.0/24    | 10.0.1.10   | Isolated services (Cloudflare) |
+| WireGuard | 10.10.5.1/24   | 10.10.5.1   | VPN remote access              |
 
 ## All Devices Quick Lookup
 
@@ -55,23 +55,23 @@ Single-page reference for understanding the entire homelab infrastructure.
 
 ## Common Questions & Where to Find Answers
 
-**"What's running on device X?"** → `devices/[device-name].md`
+**"What's running on device X?"** → [`devices/device_service_index.md`](../devices/device_service_index.md)
 
-**"What's the network layout?"** → `network/network_topology.md`
+**"What's the network layout?"** → [`network/network_topology.md`](../network/network_topology.md)
 
-**"What are the firewall rules?"** → `network/firewall_rules.md`
+**"What are the firewall rules?"** → [`network/firewall_rules.md`](../network/firewall_rules.md)
 
-**"What's the IP/MAC of device X?"** → `network/dhcp_configuration.md`
+**"What's the IP/MAC of device X?"** → [`network/dhcp_configuration.md`](../network/dhcp_configuration.md)
 
-**"What hardware does device X use?"** → `hardware/device_hardware_index.md`
+**"What hardware does device X use?"** → [`hardware/device_hardware_index.md`](../hardware/device_hardware_index.md)
 
-**"What's the device naming scheme?"** → `hardware/naming_index.md`
+**"What's the device naming scheme?"** → [`hardware/naming_index.md`](../hardware/naming_index.md)
 
-**"How do I navigate the vault?"** → `README.md` (root)
+**"How do I navigate the vault?"** → [`README.md`](../README.md) (root)
 
-**"What are the standards/conventions?"** → `CLAUDE.md` and `documentation/homelab_guide.md`
+**"What are the standards/conventions?"** → [`CLAUDE.md`](../CLAUDE.md) and [`documentation/homelab_guide.md`](homelab_guide.md)
 
-**"What services map to what IPs?"** → `network/service_matrix.md`
+**"What services map to what IPs?"** → [`network/service_matrix.md`](../network/service_matrix.md)
 
 ## Network Isolation Summary
 
@@ -88,31 +88,24 @@ See [firewall_rules.md](../network/firewall_rules.md) for complete rule details.
 ## File Locations for Key Topics
 
 ### Device Information
-- `devices/device_service_index.md` - Master device table
-- `hardware/naming_index.md` - Playing card naming
-- `hardware/device_hardware_index.md` - Hardware specs
+- [`devices/device_service_index.md`](../devices/device_service_index.md) - Master device table
+- [`hardware/naming_index.md`](../hardware/naming_index.md) - Playing card naming
+- [`hardware/device_hardware_index.md`](../hardware/device_hardware_index.md) - Hardware specs
 
 ### Network Configuration
-- `network/network_topology.md` - Network layout
-- `network/dhcp_configuration.md` - Static DHCP mappings
-- `network/firewall_rules.md` - Firewall policies
-- `network/service_matrix.md` - Service-to-IP mapping
-- `network/dns_configuration.md` - DNS records
+- [`network/network_topology.md`](../network/network_topology.md) - Network layout
+- [`network/dhcp_configuration.md`](../network/dhcp_configuration.md) - Static DHCP mappings
+- [`network/firewall_rules.md`](../network/firewall_rules.md) - Firewall policies
+- [`network/service_matrix.md`](../network/service_matrix.md) - Service-to-IP mapping
+- [`network/dns_configuration.md`](../network/dns_configuration.md) - DNS records
 
 ## Critical Standards
 
-**Docker data directory**: `/home/homelab/docker/[service-name]` on all hosts
-
 **Device naming**: Playing card deck (diamonds, spades, hearts, clubs + jokers)
-
 **File naming**: snake_case (e.g., `my_file_name.md`)
-
-**Network segments**: 4 networks (LAN, GUST, DMZ, WireGuard VPN)
-
+**Network segments**: 4 networks (LAN, GUST, DMZ, VPN)
 **Primary DNS**: jack-of-diamonds (192.168.1.50) - Pi-hole
-
 **Storage**: king-of-diamonds (192.168.1.62) - TrueNAS with 48TB ZFS
-
 **Virtualization**: two-of-diamonds (192.168.1.2) - Proxmox VE 8.x
 
 ## Quick Stats
@@ -129,4 +122,3 @@ See [firewall_rules.md](../network/firewall_rules.md) for complete rule details.
 ## Related Files
 
 - [Main README](../README.md) - Comprehensive vault overview
-- [Homelab Guide](homelab_guide.md) - Standards and workflows

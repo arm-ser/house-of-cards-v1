@@ -5,13 +5,15 @@ I would like to take a moment and thank people that played very important role i
 
 This repository contains the configuration files and documentation for additions and changes of my home lab previously partially documented in [House Of Cards](https://github.com/arm-ser/house-of-cards)
 
+> **AI-Powered Documentation**: This homelab documentation is  maintained with assistance from [Claude Code](https://claude.com/claude-code).
+
+> **Note**: All IP addresses, device names, and sensitive identifiers in this documentation have been randomized and anonymized for privacy and security purposes.
+
 **Skills Demonstrated**:
 - Network architecture & segmentation (4 isolated networks)
 - Security hardening (firewall rules, DMZ isolation, VPN)
 - Docker containerization & orchestration (40+ services)
 - Multi-platform administration (Proxmox, TrueNAS, pfSense, Linux)
-
-→ See [documentation/homelab_guide.md](documentation/homelab_guide.md) for complete technical overview
 
 **Quick Stats**: 13 devices | 4 network segments | 40+ services | 48TB storage
 → See [documentation/quick_reference.md](documentation/quick_reference.md) for full inventory
@@ -123,19 +125,40 @@ The homelab utilizes **4 isolated network segments** managed by pfSense: **LAN**
 
 **Hardware Specs**: [device_hardware_index.md](hardware/device_hardware_index.md) | **Service Mapping**: [device_service_index.md](devices/device_service_index.md)
 
-| Device | Role | Description |
-| --- | --- | --- |
-| [wall-of-cards](devices/wall_of_cards.md) | Firewall/Router | pfSense firewall managing 4 network segments |
-| [two-of-diamonds](devices/two_of_diamonds.md) | Proxmox Host | Virtualization host for TrueNAS, Immich, Matrix VMs |
-| [jack-of-diamonds](devices/jack_of_diamonds.md) | Primary DNS/Services | Pi-hole DNS, Vaultwarden, Uptime Kuma |
-| [king-of-diamonds](devices/king_of_diamonds.md) | TrueNAS Storage | 48TB ZFS storage server (Proxmox VM) |
-| [six-of-spades](devices/six_of_spades.md) | Multi-Purpose Server | n8n automation, Portainer, backup services |
-| [seven-of-spades](devices/seven_of_spades.md) | Photo Server | Immich photo management (Proxmox VM) |
-| [three-of-diamonds](devices/three_of_diamonds.md) | AI/ML Server | Ollama, Open WebUI, GPU workloads |
-| [queen-of-diamonds](devices/queen_of_diamonds.md) | Media Automation | Plex, Radarr, Sonarr, Prowlarr stack |
-| [matrix](devices/matrix.md) | Matrix Homeserver | Synapse homeserver in isolated DMZ |
-| [ten-of-spades](devices/ten_of_spades.md) | Gaming/Workstation | Dual-homed device (LAN + GUST) |
-| [joker-black](devices/joker_black.md) | Admin Workstation | Primary admin laptop (Ubuntu/Windows dual-boot) |
+| Device                                            | Role                 | Description                                         |
+| ------------------------------------------------- | -------------------- | --------------------------------------------------- |
+| [wall-of-cards](devices/wall_of_cards.md)         | Firewall/Router      | pfSense firewall managing 4 network segments        |
+| [two-of-diamonds](devices/two_of_diamonds.md)     | Proxmox Host         | Virtualization host for TrueNAS, Immich, Matrix VMs |
+| [jack-of-diamonds](devices/jack_of_diamonds.md)   | Primary DNS/Services | Pi-hole DNS, Vaultwarden, Uptime Kuma               |
+| [king-of-diamonds](devices/king_of_diamonds.md)   | TrueNAS Storage      | 48TB ZFS storage server (Proxmox VM)                |
+| [six-of-spades](devices/six_of_spades.md)         | Multi-Purpose Server | n8n automation, Portainer, backup services          |
+| [seven-of-spades](devices/seven_of_spades.md)     | Photo Server         | Immich photo management (Proxmox VM)                |
+| [three-of-diamonds](devices/three_of_diamonds.md) | AI/ML Server         | Ollama, Open WebUI, GPU workloads                   |
+| [queen-of-diamonds](devices/queen_of_diamonds.md) | Media Automation     | Plex, Radarr, Sonarr, Prowlarr stack                |
+| [matrix](devices/matrix.md)                       | Matrix Homeserver    | Synapse homeserver in isolated DMZ                  |
+| [ten-of-spades](devices/ten_of_spades.md)         | Gaming/Workstation   | Dual-homed device (LAN + GUST)                      |
+| [joker-black](devices/joker_black.md)             | Admin Workstation    | Primary admin laptop (Ubuntu/Windows dual-boot)     |
+
+---
+
+## Future Roadmap
+
+> **Current State**: This homelab is in active development and represents a working production environment in its early maturity phase. While all core services are operational, significant security hardening and infrastructure improvements are planned.
+
+### Phase 1: Security Foundation
+1. **VPN Access Segmentation** - Implement granular firewall rules for WireGuard clients (currently unrestricted full access)
+2. **Comprehensive Backup Strategy** - Deploy 3-2-1 backup rule with automated backups and offsite replication
+3. **Authentication Hardening** - SSH key-only authentication, brute-force protection (fail2ban), and credential rotation
+4. **Certificate Management** - Automate SSL/TLS certificates for internal services (Let's Encrypt)
+### Phase 2: Monitoring & Threat Detection
+5. **Intrusion Detection & Prevention** - Network-level threat detection and blocking (Snort/Suricata)
+6. **Centralized Logging & Analysis** - Aggregate and analyze logs across infrastructure (Loki/OpenSearch)
+7. **Metrics & Alerting** - System health monitoring with automated alerts (Prometheus + Grafana)
+### Phase 3: Reliability & Automation
+8. **High Availability** - Eliminate single points of failure with redundant critical services
+9. **Infrastructure as Code** - Automate provisioning and configuration management (Ansible)
+10. **Container Orchestration** - Enhanced service management and scaling capabilities (k3s/Kubernetes)
+
 
 ---
 
