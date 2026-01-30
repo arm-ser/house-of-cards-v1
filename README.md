@@ -146,18 +146,54 @@ The homelab utilizes **4 isolated network segments** managed by pfSense: **LAN**
 > **Current State**: This homelab is in active development and represents a working production environment in its early maturity phase. While all core services are operational, significant security hardening and infrastructure improvements are planned.
 
 ### Phase 1: Security Foundation
-1. **VPN Access Segmentation** - Implement granular firewall rules for WireGuard clients (currently unrestricted full access)
-2. **Comprehensive Backup Strategy** - Deploy 3-2-1 backup rule with automated backups and offsite replication
-3. **Authentication Hardening** - SSH key-only authentication, brute-force protection (fail2ban), and credential rotation
-4. **Certificate Management** - Automate SSL/TLS certificates for internal services (Let's Encrypt)
+- [ ] **VPN Access Segmentation** - Implement granular firewall rules for WireGuard clients (currently unrestricted full access)
+  - [ ] Create per-client firewall policies in pfSense
+  - [ ] Test access restrictions for each VPN peer
+  - [ ] Document new VPN access policies
+- [ ] **Comprehensive Backup Strategy** - Deploy 3-2-1 backup rule with automated backups and offsite replication
+  - [ ] Configure local backup targets on TrueNAS
+  - [ ] Set up automated backup schedules
+  - [ ] Test restore procedures
+  - [ ] Implement offsite replication
+- [ ] **Authentication Hardening** - SSH key-only authentication, brute-force protection (fail2ban), and credential rotation
+  - [ ] Deploy SSH key-based authentication across all devices
+  - [ ] Install and configure fail2ban
+  - [ ] Disable password authentication
+  - [ ] Implement credential rotation policies
+- [ ] **Certificate Management** - Automate SSL/TLS certificates for internal services (Let's Encrypt)
+  - [ ] Set up Let's Encrypt integration
+  - [ ] Configure automatic certificate renewal
+  - [ ] Deploy certificates to all internal services
+
 ### Phase 2: Monitoring & Threat Detection
-5. **Intrusion Detection & Prevention** - Network-level threat detection and blocking (Snort/Suricata)
-6. **Centralized Logging & Analysis** - Aggregate and analyze logs across infrastructure (Loki/OpenSearch)
-7. **Metrics & Alerting** - System health monitoring with automated alerts (Prometheus + Grafana)
+- [ ] **Intrusion Detection & Prevention** - Network-level threat detection and blocking (Snort/Suricata)
+  - [ ] Install IDS/IPS on pfSense
+  - [ ] Configure detection rules
+  - [ ] Set up alerting for security events
+- [ ] **Centralized Logging & Analysis** - Aggregate and analyze logs across infrastructure (Loki/OpenSearch)
+  - [ ] Deploy centralized logging stack
+  - [ ] Configure log forwarding from all devices
+  - [ ] Create log analysis dashboards
+- [ ] **Metrics & Alerting** - System health monitoring with automated alerts (Prometheus + Grafana)
+  - [ ] Deploy Prometheus and Grafana
+  - [ ] Configure metrics collection
+  - [ ] Create monitoring dashboards
+  - [ ] Set up automated alert notifications
+
 ### Phase 3: Reliability & Automation
-8. **High Availability** - Eliminate single points of failure with redundant critical services
-9. **Infrastructure as Code** - Automate provisioning and configuration management (Ansible)
-10. **Container Orchestration** - Enhanced service management and scaling capabilities (k3s/Kubernetes)
+- [ ] **High Availability** - Eliminate single points of failure with redundant critical services
+  - [ ] Deploy secondary DNS server
+  - [ ] Implement database replication
+  - [ ] Create failover procedures
+- [ ] **Infrastructure as Code** - Automate provisioning and configuration management (Ansible)
+  - [ ] Create Ansible inventory
+  - [ ] Write playbooks for service deployment
+  - [ ] Automate configuration management
+- [ ] **Container Orchestration** - Enhanced service management and scaling capabilities (k3s/Kubernetes)
+  - [ ] Evaluate k3s deployment options
+  - [ ] Plan migration strategy
+  - [ ] Deploy k3s cluster
+  - [ ] Migrate services to Kubernetes
 
 
 ---
