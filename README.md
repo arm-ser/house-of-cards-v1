@@ -1,4 +1,4 @@
-# House of Cards Version 1
+# House of Cards 
 
 Yet again, I would like to take a moment and thank people that played very important role in my learning process (SEE Teachers Section). Their informative and engaging videos, articles and classes have simplified complex topics, making them accessible and enjoyable for me to grasp. Their dedication to sharing knowledge has had a major impact on my growth, and I am truly thankful for their valuable contributions. I encourage you to subscribe and contribute to their work. Best regards to all of you. 
 ## Home Lab
@@ -48,91 +48,91 @@ Remote access VPN with full network access. Gateway: 192.168.1.1 | DNS: 192.168.
 ## Network Topology Diagram
 
 ```
-                                     INTERNET
-                                         |
-                                         | WAN (10.0.1.89)
-                                         |
-                           ┌────────────────────────────┐
-                           │   wall-of-cards (pfSense)  │
-                           │    4x 2.5GbE Firewall      │
-                           └────────────────────────────┘
-                                         |
-         ┌───────────────────────────────┼───────────────┬──────────────────┐
-         │                       │                       │                  │
-         │ LAN                   │ GUST                  │ DMZ              │ WireGuard VPN
-         │ 192.168.1.1           │ 172.16.1.1            │ 10.0.1.10        │ 10.10.5.1
-         │ (igc2)                │ (igc1)                │ (igc3)           │ (tun_wg0)
-         │                       │                       │                  │
-  ┌──────┴─────┐           ┌─────┴─────┐          ┌──────┴──────┐     ┌─────┴───────┐
-  │   SWITCHES │           │  SWITCHES │          │   SWITCH    │     │  VPN PEERS  │
-  └──────┬─────┘           └─────┬─────┘          └──────┬──────┘     └─────┬───────┘
-         │                       │                       │                  │
-         │                       │                       │                  │
-  ┌──────┴──────────┐     ┌──────┴──────────┐     ┌──────┴──────┐   ┌───────┴───────┐
-  │ LAN DEVICES     │     │ GUST DEVICES    │     │ DMZ DEVICES │   │ VPN CLIENTS   │
-  │ 192.168.1.0/24  │     │ 172.16.1.0/24   │     │ 10.0.1.0/24 │   │ 10.10.5.1/24  │
-  └─────────────────┘     └─────────────────┘     └─────────────┘   └───────────────┘
+                                   INTERNET
+                                       |
+                                       | WAN (10.0.1.89)
+                                       |
+                         ┌────────────────────────────┐
+                         │   wall-of-cards (pfSense)  │
+                         │    4x 2.5GbE Firewall      │
+                         └────────────────────────────┘
+                                       |
+       ┌───────────────────────────────┼───────────────┬──────────────────┐
+       │                       │                       │                  │
+       │ LAN                   │ GUST                  │ DMZ              │ VPN
+       │ 192.168.1.1           │ 172.16.1.1            │ 10.0.1.10        │ 10.10.5.1
+       │ (igc2)                │ (igc1)                │ (igc3)           │ (tun_wg0)
+       │                       │                       │                  │
+┌──────┴─────┐           ┌─────┴─────┐          ┌──────┴──────┐     ┌─────┴───────┐
+│   SWITCHES │           │  SWITCHES │          │   SWITCH    │     │  VPN PEERS  │
+└──────┬─────┘           └─────┬─────┘          └──────┬──────┘     └─────┬───────┘
+       │                       │                       │                  │
+       │                       │                       │                  │
+┌──────┴──────────┐     ┌──────┴──────────┐     ┌──────┴──────┐   ┌───────┴───────┐
+│ LAN DEVICES     │     │ GUST DEVICES    │     │ DMZ DEVICES │   │ VPN CLIENTS   │
+│ 192.168.1.0/24  │     │ 172.16.1.0/24   │     │ 10.0.1.0/24 │   │ 10.10.5.1/24  │
+└─────────────────┘     └─────────────────┘     └─────────────┘   └───────────────┘
 
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                              LAN - 192.168.1.0/24                                 ║
-║                         Gateway: .1  |  DNS: .50 (Pi-hole)                        ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║                             LAN - 192.168.1.0/24                                ║
+║                        Gateway: .1  |  DNS: .50 (Pi-hole)                       ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 
-┌───────────────────────────────────────────────────────────────────────────────────┐
-│  .2   │ two-of-diamonds      │ Proxmox VE Host    │ i7-8700K, 32GB                │
-│  .10  │ ten-of-spades        │ Gaming PC (LAN)    │ i7-9700K, RTX 5070, 32GB      │
-│  .50  │ jack-of-diamonds     │ Primary Services   │ MeLE Mini PC (DNS)            │
-│  .62  │ king-of-diamonds     │ TrueNAS Storage    │ Proxmox VM (48TB ZFS)         │
-│  .100 │ six-of-spades        │ Multi-Purpose      │ CTONE Mini PC (n8n, etc)      │
-│  .107 │ seven-of-spades      │ Photo Server       │ Proxmox VM (Immich)           │
-│  .200 │ three-of-diamonds    │ AI/ML Server       │ i7-8700K, RTX 3090, 64GB      │
-│  .250 │ queen-of-diamonds    │ Media Automation   │ GMKtec (Plex, *arr stack)     │
-└───────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  .2   │ two-of-diamonds      │ Proxmox VE Host    │ i7-8700K, 32GB              │
+│  .10  │ ten-of-spades        │ Gaming PC (LAN)    │ i7-9700K, RTX 5070, 32GB    │
+│  .50  │ jack-of-diamonds     │ Primary Services   │ MeLE Mini PC (DNS)          │
+│  .62  │ king-of-diamonds     │ TrueNAS Storage    │ Proxmox VM (48TB ZFS)       │
+│  .100 │ six-of-spades        │ Multi-Purpose      │ CTONE Mini PC (n8n, etc)    │
+│  .107 │ seven-of-spades      │ Photo Server       │ Proxmox VM (Immich)         │
+│  .200 │ three-of-diamonds    │ AI/ML Server       │ i7-8700K, RTX 3090, 64GB    │
+│  .250 │ queen-of-diamonds    │ Media Automation   │ GMKtec (Plex, *arr stack)   │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                            GUST - 172.16.1.0/24                                   ║
-║                      Gateway: .1  |  DNS: 192.168.1.50                            ║
-║                   Limited LAN Access (DNS, NAS, AI only)                          ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║                            GUST - 172.16.1.0/24                                 ║
+║                      Gateway: .1  |  DNS: 192.168.1.50                          ║
+║                   Limited LAN Access (DNS, NAS, AI only)                        ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 
-┌───────────────────────────────────────────────────────────────────────────────────┐
-│  .5   │ joker-black          │ Admin Workstation  │ Dell 16 Plus (Ubuntu/Win)     │
-│  .10  │ ten-of-spades        │ Gaming PC (WiFi)   │ Dual-homed device             │
-│  .15  │ guest-accesspoint    │ WiFi AP            │ Netgear AX1800 (WiFi 6)       │
-│  .105 │ tl-sg108e            │ Managed Switch     │ TP-Link 8-port                │
-│  .120 │ pixel                │ Mobile Device      │ Pixel (GrapheneOS)            │
-│  .220 │ shield               │ Smart TV           │ Android TV                    │
-└───────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  .5   │ joker-black          │ Admin Workstation  │ Dell 16 Plus (Ubuntu/Win)   │
+│  .10  │ ten-of-spades        │ Gaming PC (WiFi)   │ Dual-homed device           │
+│  .15  │ guest-accesspoint    │ WiFi AP            │ Netgear AX1800 (WiFi 6)     │
+│  .105 │ tl-sg108e            │ Managed Switch     │ TP-Link 8-port              │
+│  .120 │ pixel                │ Mobile Device      │ Pixel (GrapheneOS)          │
+│  .220 │ shield               │ Smart TV           │ Android TV                  │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                              DMZ - 10.0.1.0/24                                    ║
-║                      Gateway: .10  |  DNS: 192.168.1.50                           ║
-║                 Strict Isolation (DNS only + Matrix↔n8n)                          ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║                              DMZ - 10.0.1.0/24                                  ║
+║                      Gateway: .10  |  DNS: 192.168.1.50                         ║
+║                 Strict Isolation (DNS only + Matrix↔n8n)                        ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 
-┌───────────────────────────────────────────────────────────────────────────────────┐
-│  .120 │ matrix               │ Matrix Homeserver  │ Proxmox VM (Synapse)          │
-└───────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  .120 │ matrix               │ Matrix Homeserver  │ Proxmox VM (Synapse)        │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                       WireGuard VPN - 10.10.5.1/24                                ║
-║                  Gateway: .1  |  Full Network Access                              ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║                       WireGuard VPN - 10.10.5.1/24                              ║
+║                  Gateway: .1  |  Full Network Access                            ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 
-┌───────────────────────────────────────────────────────────────────────────────────┐
-│  10.10.5.15  │ pixel (VPN)     │ Mobile Remote      │ Pixel (GrapheneOS)          │
-│  10.10.5.115 │ galaxy (VPN)    │ Mobile Remote      │ Samsung Galaxy              │
-│  10.10.5.195 │ joker-black (VPN)│ Admin Remote      │ Dell 16 Plus                │
-└───────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│  10.10.5.15  │ pixel (VPN)     │ Mobile Remote      │ Pixel (GrapheneOS)        │
+│  10.10.5.115 │ galaxy (VPN)    │ Mobile Remote      │ Samsung Galaxy            │
+│  10.10.5.195 │ joker-black (VPN)│ Admin Remote      │ Dell 16 Plus              │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                           NETWORK ISOLATION RULES                                 ║
-╠═══════════════════════════════════════════════════════════════════════════════════╣
-║  VPN  →  Full access to LAN, GUST, DMZ, Internet                                  ║
-║  LAN  →  Full access to GUST and DMZ                                              ║
-║  GUST →  Limited LAN (DNS, NAS, AI), Blocked from DMZ                             ║
-║  DMZ  →  DNS only + Matrix↔n8n bidirectional (strict isolation)                   ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║                           NETWORK ISOLATION RULES                               ║
+╠═════════════════════════════════════════════════════════════════════════════════╣
+║  VPN  →  Full access to LAN, GUST, DMZ, Internet                                ║
+║  LAN  →  Full access to GUST and DMZ                                            ║
+║  GUST →  Limited LAN (DNS, NAS, AI), Blocked from DMZ                           ║
+║  DMZ  →  DNS only + Matrix↔n8n bidirectional (strict isolation)                 ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 **Network Highlights**:
