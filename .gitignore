@@ -1,0 +1,6 @@
+*.backup
+*.wikilink-backup
+.DS_Store
+Thumbs.db
+.obsidian/
+temp/
