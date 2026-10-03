@@ -2,7 +2,7 @@
 
 ## 📢 A Newer Version is Available
 
-**A newer version of this project is now available at [House of Cards](https://github.com/arm-ser/house-of-cards-v1)**
+**House of Cards versions:** **v1 (this one)** → [v2](https://github.com/arm-ser/house-of-cards-v2) → [v3, the latest](https://github.com/arm-ser/house-of-cards-v3)
 
 ---
 
@@ -58,9 +58,9 @@ Here are my future learning plans and a simple roadmap to guide my progress and 
 | [Lightshot](https://app.prntscr.com/en/download.html) | Convenient Screenshot taking tool     |
 
 
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Tabby Tutorial](https://www.youtube.com/watch?v=-yfuYPowUDE)  
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Ventoy Tutorial](https://www.youtube.com/watch?v=-hs4mH7uBkk)   
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Obsidian Tutorial Playlist](https://www.youtube.com/playlist?list=PL5fd4SsfvECy0zzf8Cyo20ZoipEt6YeL3)
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Tabby Tutorial](https://www.youtube.com/watch?v=-yfuYPowUDE)  
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Ventoy Tutorial](https://www.youtube.com/watch?v=-hs4mH7uBkk)   
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Obsidian Tutorial Playlist](https://www.youtube.com/playlist?list=PL5fd4SsfvECy0zzf8Cyo20ZoipEt6YeL3)
 
 -----
 
@@ -70,13 +70,13 @@ I would like to take a moment and thank the people that played very important ro
 
 ### Teachers 
 
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Awesome Open Source](https://www.youtube.com/@AwesomeOpenSource/featured) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Lawrence Systems](https://www.youtube.com/@LAWRENCESYSTEMS) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [DB Tech](https://www.youtube.com/@DBTechYT) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Raid Owl](https://www.youtube.com/@RaidOwl) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Ben Eater](https://www.youtube.com/@BenEater) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [IBRACORP](https://www.youtube.com/@IBRACORP) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Techno Tim](https://www.youtube.com/@TechnoTim) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Mark Furneaux](https://www.youtube.com/@TheUbuntuGuy) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Christian Lempa](https://www.youtube.com/@christianlempa) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [John Hammond](https://www.youtube.com/@_JohnHammond)
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Awesome Open Source](https://www.youtube.com/@AwesomeOpenSource/featured) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Lawrence Systems](https://www.youtube.com/@LAWRENCESYSTEMS) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [DB Tech](https://www.youtube.com/@DBTechYT) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Raid Owl](https://www.youtube.com/@RaidOwl) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Ben Eater](https://www.youtube.com/@BenEater) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [IBRACORP](https://www.youtube.com/@IBRACORP) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Techno Tim](https://www.youtube.com/@TechnoTim) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Mark Furneaux](https://www.youtube.com/@TheUbuntuGuy) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Christian Lempa](https://www.youtube.com/@christianlempa) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [John Hammond](https://www.youtube.com/@_JohnHammond)
 
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Чёрный Треугольник](https://www.youtube.com/@Black_Triangle) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [DesignerMix](https://www.youtube.com/@DesignerMix) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Нетипичный Безопасник](https://www.youtube.com/@MChannelone)  
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Чёрный Треугольник](https://www.youtube.com/@Black_Triangle) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [DesignerMix](https://www.youtube.com/@DesignerMix) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/youtube.png?raw=true" width="15" /> [Нетипичный Безопасник](https://www.youtube.com/@MChannelone)  
 
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/linkedin.png?raw=true" width="15" /> [Sevada Isayan](https://www.linkedin.com/in/sevadaisayan/) | <img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/linkedin.png?raw=true" width="15" /> [Gevorg Atoyan](https://www.linkedin.com/in/gevorgatoyan/)   
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/linkedin.png?raw=true" width="15" /> [Sevada Isayan](https://www.linkedin.com/in/sevadaisayan/) | <img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/linkedin.png?raw=true" width="15" /> [Gevorg Atoyan](https://www.linkedin.com/in/gevorgatoyan/)   
   
-<img src="https://github.com/arm-ser/house-of-cards/blob/main/logos-screenshots/tumo.png?raw=true" width="15" /> [Tumo Center Of Creative Technologies](https://tumo.org/)     
+<img src="https://github.com/arm-ser/house-of-cards-v1/blob/main/logos-screenshots/tumo.png?raw=true" width="15" /> [Tumo Center Of Creative Technologies](https://tumo.org/)     
 
 -----
 
